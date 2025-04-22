@@ -33,4 +33,12 @@ router.use("/users", userRoutes);
 const subscriberRoutes = require("./components/subscriber/routers/subscriber_routes.js");
 router.use("/subscribers", subscriberRoutes);
 
+//Messages Routes
+const ceoMessages = require("./components/ceo_message/routers/ceo_message_routes.js");
+router.use("/ceo-message", ceoMessages);
+
+//Gallery Routes
+const gallery = require("./components/gallery/routers/gallery_routes.js");
+router.use("/gallery", gallery);
+
 module.exports = router;
