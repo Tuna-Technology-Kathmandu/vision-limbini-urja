@@ -57,6 +57,10 @@ router.use("/reports", reportRoutes);
 const galleryRoutes = require("./components/gallery/routers/gallery_routes.js");
 router.use("/gallery", galleryRoutes);
 
+// Popup Routes
+const popupRoutes = require("./components/popup/routers/popup_routes.js");
+router.use("/popup", popupRoutes);
+
 
 
 module.exports = router;
